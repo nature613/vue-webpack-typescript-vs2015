@@ -214,6 +214,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\src\components\greeting.ts" />
     <TypeScriptCompile Include="Scripts\src\index.ts" />
     <TypeScriptCompile Include="Scripts\src\typings\index.d.ts" />
     <TypeScriptCompile Include="Scripts\src\typings\vue\index.d.ts" />

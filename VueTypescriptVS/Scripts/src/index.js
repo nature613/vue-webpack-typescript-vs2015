@@ -13,11 +13,11 @@ let App = class App extends Vue {
     constructor() {
         super(...arguments);
         // Initial data can be declared as instance properties
-        this.message = 'Hello!';
+        this.userName = 'Hello!';
     }
     // Component methods can be declared as instance methods
-    onClick() {
-        window.alert(this.message);
+    reverse() {
+        this.userName = this.userName.split('').reverse().join('');
     }
 };
 App = __decorate([
@@ -25,8 +25,9 @@ App = __decorate([
         // All component options are allowed in here
         template: `
 		<div>
-			<greeting />
-			<button @click="onClick">Click! 2</button>
+			<greeting v-bind:name="userName" />
+			<input v-model="userName">
+			<button @click="reverse">reverse name</button>
 		</div>
 	`,
         components: { 'greeting': Greeting }

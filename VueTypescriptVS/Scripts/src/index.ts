@@ -7,18 +7,20 @@ import Greeting from './components/greeting';
 	// All component options are allowed in here
 	template: `
 		<div>
-			<greeting />
-			<button @click="onClick">Click! 2</button>
+			<greeting v-bind:name="userName" />
+			<input v-model="userName">
+			<button @click="reverse">reverse name</button>
 		</div>
 	`,
+
 	components: { 'greeting' : Greeting }
 })
 class App extends Vue {
 	// Initial data can be declared as instance properties
-	message: string = 'Hello!';
+	userName: string = 'Hello!';
 	// Component methods can be declared as instance methods
-	onClick(): void {
-		window.alert(this.message);
+	reverse(): void {
+		this.userName = this.userName.split('').reverse().join('');
 	}
 }
 

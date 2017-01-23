@@ -8,21 +8,12 @@ import * as Vue from 'vue';
 import Component from 'vue-class-component';
 // The @Component decorator indicates the class is a Vue component
 let Greeting = class Greeting extends Vue {
-    // The @Component decorator indicates the class is a Vue component
-    constructor() {
-        super(...arguments);
-        // Initial data can be declared as instance properties
-        this.greeting = 'Hello!';
-    }
-    // Component methods can be declared as instance methods
-    onClick() {
-        window.alert(this.greeting);
-    }
 };
 Greeting = __decorate([
     Component({
         // All component options are allowed in here
-        template: '<h1>{{ greeting }}</h1>'
+        template: '<h1>Hello {{ name }}</h1>',
+        props: ['name'],
     })
 ], Greeting);
 export default Greeting;
