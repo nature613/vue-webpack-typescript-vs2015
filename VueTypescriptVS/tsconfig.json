@@ -1,25 +1,26 @@
 {
   "compileOnSave": true,
-	"compilerOptions": {
-		"experimentalDecorators": true,
-		"noImplicitAny": false,
-		"noEmitOnError": true,
-		"removeComments": false,
-		"allowJs": true,
-		"sourceMap": true,
-		"target": "es6",
-		"module": "es6",
-		"lib": [
-			"dom",
-			"es2015",
-			"es2015.promise"
-		],
-		"baseUrl": ".",
-		"paths": {
-			"vue": [ "scripts/src/typings/vue/index" ],
-			"vue-class-component": [ "scripts/src/lib/vue-class-component/index" ]
-		}
-	},
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "target": "es6",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.promise"
+    ],
+    "types": [ "vue-typescript-import-dts" ],
+    "baseUrl": ".",
+    "paths": {
+      "vue": [ "scripts/src/typings/vue/index" ],
+      "vue-class-component": [ "scripts/src/lib/vue-class-component/index" ]
+    }
+  },
 	"include": [
 		"scripts/src"
 	]

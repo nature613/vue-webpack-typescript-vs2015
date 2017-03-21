@@ -209,11 +209,14 @@
     <Content Include="Scripts\src\lib\vue-class-component\index.js.map" />
     <Content Include="Scripts\src\lib\vue-class-component\util.js.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Scripts\src\components\Demo.vue" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\src\components\Demo.ts" />
     <TypeScriptCompile Include="Scripts\src\components\greeting.ts" />
     <TypeScriptCompile Include="Scripts\src\index.ts" />
     <TypeScriptCompile Include="Scripts\src\typings\index.d.ts" />

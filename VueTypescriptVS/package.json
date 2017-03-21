@@ -21,6 +21,7 @@
     "vue-class-component": "^4.4.0",
     "vue-loader": "^10.0.0",
     "vue-template-compiler": "^2.1.0",
+    "vue-typescript-import-dts": "^3.0.1",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.9"
   }

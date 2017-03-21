@@ -1,3 +1,4 @@
+/// <binding ProjectOpened='Watch - Development' />
 var path = require('path')
 var webpack = require('webpack')
 

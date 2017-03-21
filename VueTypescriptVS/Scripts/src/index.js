@@ -7,6 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import * as Vue from 'vue';
 import Component from 'vue-class-component';
 import Greeting from './components/greeting';
+import Demo from './components/Demo.vue';
+console.log(Demo);
 // The @Component decorator indicates the class is a Vue component
 let App = class App extends Vue {
     // The @Component decorator indicates the class is a Vue component
@@ -25,12 +27,13 @@ App = __decorate([
         // All component options are allowed in here
         template: `
 		<div>
+            <demo v-bind:name="userName" />
 			<greeting v-bind:name="userName" />
 			<input v-model="userName">
 			<button @click="reverse">reverse name</button>
 		</div>
 	`,
-        components: { 'greeting': Greeting }
+        components: { 'greeting': Greeting, 'demo': Demo }
     })
 ], App);
 new App({ el: '#app' });

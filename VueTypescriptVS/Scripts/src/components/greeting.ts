@@ -8,4 +8,4 @@ import Component from 'vue-class-component';
 
 	props: ['name'],
 })
-export default class Greeting extends Vue {}
+export default class Greeting extends Vue { }
